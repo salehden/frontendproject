@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-@media only screen and (min-width: 1280px) {
-  .container {
-    min-width: 1200px;
-  }
-}
-
 button.btn {
   color: #fff;
   border-radius: 30px;
@@ -18,6 +12,7 @@ button.btn {
   text-transform: none;
   font-size: 14px;
   background: #017DFC;
+  z-index: 1;
 }
 
 button.btn:hover {
@@ -85,8 +80,66 @@ section {
   margin-left: auto;
 }
 
-#header-nav ul li a {
+.uptitle {
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #017DFC;
+}
+
+.is-sticky {
+  background-color: white;
+  margin-top: 0px;
+  padding: 0;
+}
+
+#header-nav .navbar {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#header-nav .navbar .navbar-nav .nav-item {
+  margin: auto 30px;
+}
+
+#header-nav .navbar .navbar-nav .nav-item .nav-link {
+  padding: 25px 0;
+  position: relative;
   color: #222;
+}
+
+#header-nav .navbar .navbar-nav .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  background-color: #8492a6;
+  bottom: 15px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#header-nav .navbar .navbar-nav .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+
+#header-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: -20px;
+}
+
+#header-nav .navbar .navbar-nav .nav-item .dropdown-menu a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 10px 15px;
+  width: 210px;
+}
+
+#header-nav .navbar .navbar-nav .nav-item .dropdown-menu a:hover {
+  background-color: #017DFC;
+  color: white;
 }
 
 #business {
@@ -119,6 +172,148 @@ section {
 }
 
 #business .info p.lead {
+  font-size: 17px;
+  line-height: 1.7em;
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #8492a6;
+}
+
+#our-services {
+  background-image: url("../img/1.2.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+#our-services .section-title h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #35404e;
+}
+
+#our-services .section-title p.lead {
+  font-size: 17px;
+  line-height: 1.7em;
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #8492a6;
+}
+
+#our-services .elements {
+  height: 350px;
+  width: 100%;
+  overflow: none;
+  padding: 50px;
+  background: #f5f9fd;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#our-services .elements .logo {
+  margin-bottom: 20px;
+}
+
+#our-services .elements .logo i {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  background-color: #017DFC;
+  padding: 14px 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 33px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+}
+
+#our-services .elements h2 {
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #35404e;
+}
+
+#our-services .elements p {
+  font-size: 17px;
+  line-height: 1.7em;
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #8492a6;
+}
+
+#our-services .elements .bg-logo {
+  position: absolute;
+  font-size: 240px;
+  background: none;
+  width: auto;
+  height: auto;
+  color: rgba(0, 0, 0, 0.2);
+  right: -30px;
+  top: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#our-services .elements:hover {
+  background-color: #017DFC;
+  -webkit-box-shadow: 8px 8px 60px 0px rgba(20, 20, 20, 0.3);
+  box-shadow: 2px 2px 60px 0px rgba(20, 20, 20, 0.3);
+}
+
+#our-services .elements:hover h2,
+#our-services .elements:hover p {
+  color: white;
+}
+
+#our-services .elements:hover .bg-logo {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+#security {
+  margin-top: 50px;
+  background-image: url("../img/1.3.png");
+  background-position: bottom center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#security .image img {
+  width: 100%;
+}
+
+#security .info {
+  width: 100%;
+}
+
+#security .info h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #35404e;
+}
+
+#security .info h2 span {
+  color: #017DFC;
+}
+
+#security .info p.lead {
   font-size: 17px;
   line-height: 1.7em;
   margin-top: 0;

@@ -11,6 +11,7 @@ button.btn {
     text-transform: none;
     font-size: 14px;
     background: $primary-color;
+    z-index: 1;
     &:hover {
         color: #fff;
         -webkit-box-shadow: 2px 2px 20px 0px rgba(20, 20, 20, 0.3);
