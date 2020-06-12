@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    // header js start
     $('.dropdown').hover(function () {
         $(this).addClass("show");
         $(this).find(".dropdown-menu").addClass("show");
@@ -8,6 +8,7 @@ $(document).ready(function () {
         $(this).removeClass("show");
         $(this).find(".dropdown-menu").removeClass("show");
     });
+    // add sticky class navbar
     $(window).scroll(function () {
         if ($('html').scrollTop() > 70) {
             $('.navbar').addClass('is-sticky')
@@ -15,6 +16,14 @@ $(document).ready(function () {
             $('.navbar').removeClass('is-sticky')
         }
     });
+    $(window).scroll(function () {
+        if ($('html').scrollTop() > 70) {
+            $('.mobile-nav').addClass('is-sticky')
+        } else {
+            $('.mobile-nav').removeClass('is-sticky')
+        }
+    });
+    // header js end
     $('#logo-carousel').owlCarousel({
         rtl: true,
         dots: false,

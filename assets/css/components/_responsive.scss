@@ -1,3 +1,99 @@
-@media only screen and (min-width: 992px) {
-	
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    section {
+        padding: 20px 0 !important;
+    }
+
+
+    .navbar {
+        display: none;
+    }
+
+    #mobile-header {
+        height: 90px;
+        padding: 0;
+        margin: 0;
+
+        .mobile-nav {
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .mobile-nav {
+                i {
+                    font-size: 30px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    #business {
+        img {
+            width: 100%;
+        }
+    }
+
+    #our-services {
+        .col-lg-4 {
+            margin: 10px 0;
+        }
+    }
+
+    #footer-top {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+
+        .col-lg-4 {
+            .col-lg-6 {
+                margin-left: 0;
+                padding-left: 0;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    #testimonial {
+        .elements {
+            width: 100% !important;
+        }
+    }
+
+    #copyright {
+        display: flex;
+        flex-direction: column;
+
+        .copyright {
+            margin-bottom: 10px;
+        }
+
+        .social {
+            display: flex;
+
+            i {
+                margin: 25px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1210.98px) {
+    #mobile-header{
+        display: none;
+    }
 }

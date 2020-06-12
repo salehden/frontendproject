@@ -1,4 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@media (max-width: 575.98px) {
+  section {
+    padding: 20px 0 !important;
+  }
+  .navbar {
+    display: none;
+  }
+  #mobile-header {
+    height: 90px;
+    padding: 0;
+    margin: 0;
+  }
+  #mobile-header .mobile-nav {
+    margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #mobile-header .mobile-nav .mobile-nav i {
+    font-size: 30px;
+    color: #017DFC;
+  }
+  #business img {
+    width: 100%;
+  }
+  #our-services .col-lg-4 {
+    margin: 10px 0;
+  }
+  #footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  #footer-top .col-lg-4 .col-lg-6 {
+    margin-left: 0;
+    padding-left: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #testimonial .elements {
+    width: 100% !important;
+  }
+  #copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #copyright .copyright {
+    margin-bottom: 10px;
+  }
+  #copyright .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #copyright .social i {
+    margin: 25px;
+  }
+}
+
 button.btn {
   color: #fff;
   border-radius: 30px;
