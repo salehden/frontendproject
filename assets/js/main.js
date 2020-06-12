@@ -7,14 +7,14 @@ $(document).ready(function () {
     }, function () {
         $(this).removeClass("show");
         $(this).find(".dropdown-menu").removeClass("show");
-    })
+    });
     $(window).scroll(function () {
-        if ($('html').scrollTop() > 150) {
+        if ($('html').scrollTop() > 70) {
             $('.navbar').addClass('is-sticky')
         } else {
             $('.navbar').removeClass('is-sticky')
         }
-    })
+    });
     $('#logo-carousel').owlCarousel({
         rtl: true,
         dots: false,
@@ -34,9 +34,9 @@ $(document).ready(function () {
                 items: 5
             }
         }
-    })
+    });
     $('#person-carousel').owlCarousel({
-        rtl: true,
+        ltr: true,
         dots: true,
         loop: true,
         margin: 10,
@@ -54,5 +54,9 @@ $(document).ready(function () {
                 items: 3
             }
         }
-    })
+    });
+    $('.counter .value').counterUp({
+        delay: 10,
+        time: 1000
+    });
 })
