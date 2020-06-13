@@ -16,13 +16,24 @@ $(document).ready(function () {
             $('.navbar').removeClass('is-sticky')
         }
     });
-    $(window).scroll(function () {
-        if ($('html').scrollTop() > 70) {
-            $('.mobile-nav').addClass('is-sticky')
-        } else {
-            $('.mobile-nav').removeClass('is-sticky')
-        }
-    });
+    // let mainMenu = document.querySelector('.main-menu');
+    $(".toggle-elem").click(function(){
+        $(this).parent().next().toggleClass('d-none');
+        console.log();
+        
+        $(this).parent().next().children().children().children().children().click(function(e){
+            e.preventDefault();
+            console.log( $(this).parent().next());
+            $(this).parent().next().toggleClass('d-none');
+            
+        });
+        
+
+
+        
+        
+        
+    })
     // header js end
     $('#logo-carousel').owlCarousel({
         rtl: true,
