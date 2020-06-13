@@ -16,25 +16,17 @@ $(document).ready(function () {
             $('.navbar').removeClass('is-sticky')
         }
     });
-    // let mainMenu = document.querySelector('.main-menu');
+    // toggle main menu for mobile and tablet screen
     $(".toggle-elem").click(function(){
-        $(this).parent().next().toggleClass('d-none');
-        console.log();
-        
-        $(this).parent().next().children().children().children().children().click(function(e){
+        $(this).parent().parent().next().toggleClass('d-none');
+        $(this).parent().parent().next().children().children().children().children().click(function(e){
             e.preventDefault();
-            console.log( $(this).parent().next());
             $(this).parent().next().toggleClass('d-none');
-            
         });
-        
-
-
-        
-        
-        
     })
     // header js end
+
+    // logo carousel js
     $('#logo-carousel').owlCarousel({
         rtl: true,
         dots: false,
@@ -55,6 +47,7 @@ $(document).ready(function () {
             }
         }
     });
+    // person carousel js
     $('#person-carousel').owlCarousel({
         ltr: true,
         dots: true,
@@ -67,14 +60,15 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
-                items: 3
+            768: {
+                items: 2
             },
-            1000: {
+            1200: {
                 items: 3
             }
         }
     });
+    // counter section js
     $('.counter .value').counterUp({
         delay: 10,
         time: 1000
