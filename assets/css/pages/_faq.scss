@@ -1,0 +1,140 @@
+#faqs {
+    background: url('../img/1.4.png');
+    background-size: cover;
+    background-position: center;
+
+    .caption {
+        h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            line-height: 56px;
+            letter-spacing: -1px;
+            color: $text-black;
+            font-weight: bold;
+            margin-top: 66px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #8492a6;
+            line-height: 1.7em;
+        }
+    }
+}
+
+#faq-services {
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+
+    .info {
+        .show-faq-area {
+            background-color: white;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 8px 8px 50px 0px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 10px;
+
+            a {
+                padding: 10px;
+                text-decoration: none;
+                color: #343a40 !important;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
+                h2 {
+                    font-weight: bold;
+                }
+
+                i {}
+            }
+        }
+
+        .hide-faq-area {
+            background-color: white;
+            padding: 1.5rem!important;
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #8492a6;
+                line-height: 1.7em;
+            }
+        }
+
+    }
+
+}
+
+#contact-us {
+    background-image: url('../img/1.5.png');
+    background-position: center;
+    background-size: cover;
+
+    .contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        i.fa-phone-alt {
+            font-size: 48px;
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #35404e;
+            line-height: 48px;
+            letter-spacing: -1px;
+            font-size: 36px;
+            color: #35404e;
+            font-weight: bold;
+            margin: 10px 0 20px 0;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        p {
+            line-height: 1.7em;
+            margin-top: 0;
+            font-weight: 600;
+            color: $light-black;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+
+    h1 {
+        font-weight: bold;
+        color: #35404e;
+        line-height: 48px;
+        letter-spacing: -1px;
+        font-size: 36px;
+        color: #35404e;
+        font-weight: bold;
+        margin: 10px 0 20px 0;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    p {
+        line-height: 1.7em;
+        margin-top: 0;
+        font-weight: 600;
+        color: $light-black;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}

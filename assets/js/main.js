@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // index.html start
     // header js start
     $('.dropdown').hover(function () {
         $(this).addClass("show");
@@ -73,4 +74,17 @@ $(document).ready(function () {
         delay: 10,
         time: 1000
     });
+    // index.html end
+    // 
+    // faq.html start
+})
+
+let i = document.querySelectorAll('.show-faq-area a');
+
+i.forEach(icon => {
+    icon.addEventListener('click', function(e){
+        e.preventDefault();
+        icon.parentNode.nextElementSibling.classList.toggle('d-none');        
+        
+    })
 })
