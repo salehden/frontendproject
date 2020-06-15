@@ -266,6 +266,27 @@
   #contact-us .col-lg-6 {
     margin-top: 20px;
   }
+  #awesome .awesome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #awesome .awesome h4 {
+    text-align: center;
+  }
+  #different .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1275,7 +1296,7 @@ section {
 }
 
 #different .content img {
-  max-width: 100%;
+  width: 100%;
 }
 
 #different .content h1 {
@@ -1300,6 +1321,12 @@ section {
 
 #team .content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #team .content .image::after {
@@ -1308,8 +1335,9 @@ section {
   content: '';
   width: 100%;
   background-color: #017DFC;
-  height: 99%;
-  left: 0;
+  height: 100%;
+  top: 0px;
+  left: 0px;
   position: absolute;
   z-index: 1;
   border-radius: 15px;
@@ -1320,9 +1348,10 @@ section {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;
   z-index: 0;
   border-radius: 15px;
+  height: 100%;
 }
 
 #team .content .social-links {
@@ -1331,14 +1360,20 @@ section {
   background-color: white;
   border-radius: 5px;
   bottom: 10%;
-  left: 20%;
+  width: 50%;
   z-index: 3;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #team .content .social-links i {
-  padding: 10px;
+  padding: 5px;
   color: #017DFC;
 }
 
@@ -1432,5 +1467,130 @@ section {
   color: white;
   font-size: 24px;
   font-weight: bold;
+}
+
+#contact-us {
+  background-image: url("../img/1.6.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-us .caption {
+  margin-top: 20px;
+}
+
+#contact-us .caption h1 {
+  font-size: 52px;
+}
+
+#questions {
+  background-image: url("../img/1.3.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#questions .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questions .question h1 {
+  font-weight: bold;
+  color: #35404e;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+#questions .question input {
+  border: solid 1px #cccccc;
+  margin-bottom: 20px;
+  padding: 10px 2px;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#questions .question input:focus {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  background-color: #f8f8f8;
+}
+
+#questions .question textarea {
+  padding: 10px 2px;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  height: 195px;
+}
+
+#office .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#office .boxes .secondary-color {
+  background-color: #292BA0;
+}
+
+#office .boxes .tetriary-color {
+  background-color: #342A6D;
+}
+
+#office .boxes .box {
+  padding: 40px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+#office .boxes .box h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#office .boxes .box .location,
+#office .boxes .box .call,
+#office .boxes .box .mail,
+#office .boxes .box .document {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#office .boxes .box .location i,
+#office .boxes .box .call i,
+#office .boxes .box .mail i,
+#office .boxes .box .document i {
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+#office .boxes .box .location span,
+#office .boxes .box .call span,
+#office .boxes .box .mail span,
+#office .boxes .box .document span {
+  color: white;
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.7em;
 }
 /*# sourceMappingURL=style.css.map */

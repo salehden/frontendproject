@@ -161,6 +161,9 @@
             margin-top: 20px;
         }
     }
+
+    // about-us.html
+    
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -280,6 +283,25 @@
             margin-top: 20px;
         }
     }
+
+    // about-us.html
+    #awesome {
+        .awesome {
+            h4 {
+                text-align: center;
+            }
+
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #different {
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
 }
 
 // Medium devices (tablets, less than 992px)
@@ -448,10 +470,12 @@
         }
 
     }
+    
 }
 
 @media (min-width: 992px) {
     #mobile-header {
         display: none;
     }
+    
 }
