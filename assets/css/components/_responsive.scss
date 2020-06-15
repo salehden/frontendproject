@@ -418,6 +418,36 @@
             margin-top: 20px;
         }
     }
+
+    // about-us.html
+    #carousel2 {
+        .carousel-items {
+            flex-direction: column;
+
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+
+    #awesome {
+        .awesome {
+            h4 {
+                text-align: center;
+            }
+
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    #different {
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
 }
 
 @media (min-width: 992px) {

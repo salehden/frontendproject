@@ -48,6 +48,26 @@ $(document).ready(function () {
             }
         }
     });
+    $('#logo-4-carousel').owlCarousel({
+        rtl: true,
+        dots: false,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
     // person carousel js
     $('#person-carousel').owlCarousel({
         ltr: true,
