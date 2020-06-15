@@ -83,6 +83,12 @@ let i = document.querySelectorAll('.show-faq-area a');
 
 i.forEach(icon => {
     icon.addEventListener('click', function(e){
+        if(icon.lastElementChild.classList.contains('fa-plus')){
+            icon.lastElementChild.classList.remove('fa-plus');
+            icon.lastElementChild.classList.add('fa-minus');
+        }else{
+            icon.lastElementChild.classList.add('fa-plus');
+        }
         e.preventDefault();
         icon.parentNode.nextElementSibling.classList.toggle('d-none');        
         

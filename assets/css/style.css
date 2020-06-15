@@ -146,6 +146,12 @@
   #copyright .social i {
     margin: 25px;
   }
+  #contact-us {
+    text-align: center;
+  }
+  #contact-us .col-lg-6 {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -253,6 +259,12 @@
     margin-top: 10px;
     margin-left: 0;
     padding-left: 0;
+  }
+  #contact-us {
+    text-align: center;
+  }
+  #contact-us .col-lg-6 {
+    margin-top: 20px;
   }
 }
 
@@ -377,6 +389,12 @@
     margin-top: 10px;
     margin-left: 0;
     padding-left: 0;
+  }
+  #contact-us {
+    text-align: center;
+  }
+  #contact-us .col-lg-6 {
+    margin-top: 20px;
   }
 }
 

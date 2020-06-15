@@ -151,6 +151,16 @@
             }
         }
     }
+
+    // faq.html
+
+    #contact-us {
+        text-align: center;
+
+        .col-lg-6 {
+            margin-top: 20px;
+        }
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -260,6 +270,16 @@
             }
         }
     }
+
+    // faq.html
+
+    #contact-us {
+        text-align: center;
+
+        .col-lg-6 {
+            margin-top: 20px;
+        }
+    }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -280,6 +300,7 @@
                 .button {
                     display: flex;
                     align-items: center;
+
                     button {
                         display: flex;
                         align-items: center;
@@ -360,8 +381,8 @@
         }
     }
 
-    #security{
-        section{
+    #security {
+        section {
             padding-top: 0px !important;
         }
     }
@@ -386,6 +407,15 @@
                 margin-left: 0;
                 padding-left: 0;
             }
+        }
+    }
+
+    // faq.html 
+    #contact-us {
+        text-align: center;
+
+        .col-lg-6 {
+            margin-top: 20px;
         }
     }
 }
