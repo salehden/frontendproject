@@ -152,6 +152,12 @@
   #contact-us .col-lg-6 {
     margin-top: 20px;
   }
+  #office .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1531,6 +1537,10 @@ section {
   height: 195px;
 }
 
+#office {
+  padding-top: 0;
+}
+
 #office .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1551,7 +1561,25 @@ section {
 #office .boxes .box {
   padding: 40px;
   border-radius: 10px;
-  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#office .boxes .box a {
+  text-decoration: none;
+}
+
+#office .boxes .box a i {
+  color: white;
+}
+
+#office .boxes .box a span {
+  color: white;
 }
 
 #office .boxes .box h1 {
@@ -1559,38 +1587,5 @@ section {
   margin-bottom: 25px;
   font-weight: bold;
   color: white;
-}
-
-#office .boxes .box .location,
-#office .boxes .box .call,
-#office .boxes .box .mail,
-#office .boxes .box .document {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#office .boxes .box .location i,
-#office .boxes .box .call i,
-#office .boxes .box .mail i,
-#office .boxes .box .document i {
-  color: white;
-  font-size: 15px;
-  margin-right: 5px;
-}
-
-#office .boxes .box .location span,
-#office .boxes .box .call span,
-#office .boxes .box .mail span,
-#office .boxes .box .document span {
-  color: white;
-  background: none;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  line-height: 1.7em;
 }
 /*# sourceMappingURL=style.css.map */

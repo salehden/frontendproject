@@ -57,49 +57,41 @@
 }
 
 #office {
+    padding-top: 0;
     .boxes {
         display: flex;
         justify-content: center;
-
-        .secondary-color{
+        .secondary-color {
             background-color: $secondary-color;
         }
-        .tetriary-color{
+
+        .tetriary-color {
             background-color: #342A6D;
         }
+
         .box {
             padding: 40px;
             border-radius: 10px;
-            margin: 0 20px;
-            h1{
+            display: flex;
+            flex-direction: column;
+            a{
+                text-decoration: none;
+                i{
+                    color: white;
+                }
+                span{
+                    color: white;
+                }
+            }
+            h1 {
                 font-size: 24px;
                 margin-bottom: 25px;
                 font-weight: bold;
                 color: white;
             }
 
-            .location,
-            .call,
-            .mail,
-            .document {
-                display: flex;
-                align-items: center;
-                i {
-                    color: white;
-                    font-size: 15px;
-                    margin-right: 5px;
-                }
-
-                span {
-                    color: white;
-                    background: none;
-                    margin: 0;
-                    padding: 0;
-                    font-size: 15px;
-                    line-height: 1.7em;
-                }
-            }
-
         }
     }
+
+
 }

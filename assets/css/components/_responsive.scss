@@ -164,6 +164,13 @@
 
     // about-us.html
     
+    // contact-us
+
+    #office{
+        .boxes{
+            flex-direction: column;
+        }
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
